@@ -6,9 +6,9 @@ store.subscribe(()=>{
     console.log("Updated",store.getState());
 })
 
-store.dispatch(addTask("test task"))
+store.dispatch(addTask({task:"test task"}))
 console.log(store.getState());
-store.dispatch(completeTask(1));
-store.dispatch(removeTask(1));
+store.dispatch(completeTask({id:1}));
+store.dispatch(removeTask({id:1}));
 
 console.log(store.getState());
