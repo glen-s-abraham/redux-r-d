@@ -13,5 +13,6 @@ module.exports = {
           compress: true,
           port: 3000,
     },
+    devtool:"source-map",
     mode: "development",
 };
